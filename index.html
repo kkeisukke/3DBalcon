@@ -8,12 +8,10 @@
   </head>
   <body>
     <a-scene>
-      <a-camera user-height="0" wasd-controls-enabled="false" arrow-key-rotation>
+      <a-camera user-height="0" wasd-controls-enabled="false" arrow-key-rotation></a-camera>
       </a-camera>
-      <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: highPoly; color: #ffcccc"></a-entity>
-      <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: highPoly; color: #ffcccc"></a-entity>
-      <a-entity id="ctlL" laser-controls="hand: left"></a-entity>
-      <a-entity id="ctlR" laser-controls="hand: right"></a-entity>
+      <a-entity id="leftHand" hand-tracking-controls="hand: left;"></a-entity>
+　　　 <a-entity id="rightHand" hand-tracking-controls="hand: right;"></a-entity>
       <a-gltf-model id="balcon" src="Balcon.gltf"  position="0 -1.5 -4" rotation="-5 180 0" scale="1.45 1.45 1.45"></a-gltf-model>
       
       
@@ -55,3 +53,7 @@
   <script>
   </script>
 </html>
+
+
+
+
